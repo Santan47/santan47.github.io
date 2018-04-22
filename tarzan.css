@@ -1,0 +1,47 @@
+.navbar{
+	background-color: white;
+   font-family: "Times New Roman", Times, serif;
+   color: black;
+   font-size: 20px;
+
+}
+h1.sizecol{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 165px;
+	text-align: right;
+}
+h1.sizecol1{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 25px;
+}
+h3.sizecol3{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 70px;
+}
+h3.sizepx{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 45px;
+	margin-top: 5px;
+}
+hr { 
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
+.img{
+   opacity: 1;
+   border: 2px solid #333;
+}
+.flow-text{
+    font-size: 23px !important;
+}
+.background1{
+	background-image: url("port-wall/badal.jpg");
+}
+.background2{
+	background-image: url("port-wall/projects.jpg");
+}
