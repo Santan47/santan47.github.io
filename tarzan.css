@@ -1,7 +1,6 @@
 .navbar{
-	background-color: white;
    font-family: "Times New Roman", Times, serif;
-   color: black;
+   color: white;
    font-size: 20px;
 
 }
@@ -40,8 +39,14 @@ hr {
     font-size: 23px !important;
 }
 .background1{
-	background-image: url("port-wall/badal.jpg");
+	background-image: url("port-wall/lamp.jpg");
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+	opacity: 0.8;
 }
 .background2{
 	background-image: url("port-wall/projects.jpg");
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+	opacity: 0.8;
 }
