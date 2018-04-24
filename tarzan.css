@@ -38,6 +38,12 @@ hr {
 .flow-text{
     font-size: 23px !important;
 }
+.flow-text1{
+    font-size: 18px !important;
+    background-color: white;
+    opacity: 0.7;
+    color:black;
+}
 .background1{
 	background-image: url("port-wall/lamp.jpg");
 	background-size: 100% 100%;
