@@ -1,5 +1,5 @@
 .navbar{
-   font-family: courier;
+   font-family: serif;
    color: white;
    font-size: 20px;
 }
@@ -26,14 +26,14 @@ h3.sizepx{
 	margin-top: 5px;
 }
 hr { 
-	color: white;
+	color: #333;
     display: block;
     margin-top: 0em;
     margin-bottom: 0em;
     margin-left: auto;
     margin-right: auto;
     border-style: inset;
-    border-width: 1px;
+    border-width: 3px;
 } 
 .img{
    opacity: 1;
@@ -42,28 +42,15 @@ hr {
 .flow-text{
 	font-family: courier;
 	letter-spacing: 0px;
-    font-size: 23px !important;
+    font-size: 18px !important;
 }
 .flow-text1{
 	font-family: courier;
 	letter-spacing: 0px;
     font-size: 18px !important;
-    background-color: white;
     opacity: 0.7;
     color:black;
-}
-.background1{
-	background-image: url("port-wall/lamp.jpg");
-	background-size: 100% 100%;
-	background-repeat:no-repeat;
-	opacity: 0.8;
-}
-.background2{
-	background-image: url("port-wall/projects.jpg");
-	background-size: 100% 100%;
-	background-repeat:no-repeat;
-	opacity: 0.8;
-}
+}	
 .container1{
 	background-color: #333;
 	font-family: courier;
@@ -91,18 +78,9 @@ hr {
     font-family: courier;
 	letter-spacing: 3px;
 }
-hr { 
-	color: white;
-    display: block;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-} 
+
 .container3{
-	background-color: #BCBDBC;
+	background-color: white;
 	font-family: courier;
 	letter-spacing: 1px;
 	color: #333;
