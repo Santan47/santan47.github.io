@@ -2,6 +2,27 @@ $(document).ready(function() {
     /*
      * Main variables
      */
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if(isMobile){
+      $(".projectDiv").addClass("hide");
+      $("#mobileMenu").removeClass("hide");
+      $("#desktopMenu").addClass("hide");
+    }
+    else{
+      $(".projectDiv").removeClass("hide");
+      $("#mobileMenu").addClass("hide");
+      $("#desktopMenu").removeClass("hide");
+    }
+
+    $('#icns').hide();
+    $('.con').click(function(){
+      $('#top').toggleClass('top');
+      $('#bottom').toggleClass('bottom');
+      $('#middle').toggleClass('middle');
+      $('#icns').slideToggle();
+    });
+
     var content = [{
       title: "Hi! I'm Santan Kr. Sharma",
       desc: "Software Developer"
@@ -65,10 +86,17 @@ $(document).ready(function() {
       currentPage--;
       if (currentPage === 0) {
         $("#soup-prev").hide();
-        $(".main").removeClass("hide");
+        
+        if(isMobile){
+          // $(".main").removeClass("hide");
+          $("#profileDiv").attr('style', 'padding-top: 120px');
+        }
         $("#soup-next").attr('style', 'padding-left: 0px');
       }
       else{
+        if(isMobile){
+          $("#profileDiv").attr('style', 'padding-top: 20px');
+        }
         $("#soup-prev").attr('style', 'padding-right: 80px');
         $("#soup-next").attr('style', 'padding-left: 80px');
       }
@@ -79,12 +107,20 @@ $(document).ready(function() {
     $("#soup-next").click(function() {
       $("#soup-prev").show();
       currentPage++;
-      $(".main").addClass("hide");  
+      // if(isMobile){
+      //   $(".main").addClass("hide"); 
+      // } 
       if (currentPage === content.length - 1) {
         $("#soup-next").hide();
         $("#soup-prev").attr('style', 'padding-right: 0px');
+        if(isMobile){
+          $("#profileDiv").attr('style', 'padding-top: 20px');
+        }
       }
       else{
+        if(isMobile){
+          $("#profileDiv").attr('style', 'padding-top: 20px');
+        }
         $("#soup-prev").attr('style', 'padding-right: 80px');
         $("#soup-next").attr('style', 'padding-left: 80px');
       }

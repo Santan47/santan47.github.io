@@ -16,33 +16,59 @@
   <link rel="stylesheet" type="text/css" href="css/santan.css">
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 </head>
 <body>
 <div id="loader"></div>
   <div id="soup-container">
-    <div class="icon-bar">
-      <div class="flexRaw">
+    <!-- -------------------------------------------- -->
+    <div id="mobileMenu" class="col hide">
+      <div class="con">
+        <div class="bar" id="top"></div>
+        <div class="bar" id="middle"></div>
+        <div class="bar" id="bottom"></div>
+      </div>
+      <div class="icns" id="icns">
+          <a href="https://github.com/Santan47" class="facebook icn "><i class="fa fa-github midicon"></i></a> <div style="padding-left: 5px; color:white;">Github</div>
+          <a href="https://www.linkedin.com/in/santan47/" class="linkedin icn"><i class="fa fa-linkedin midicon"></i></a> <div style="padding-left: 5px; color:white;"> LinkedIn</div>
+          <a href="https://twitter.com/47santan" class="twitter icn"><i class="fa fa-twitter midicon" ></i></a>  <div style="padding-left: 5px; color:white;">Twitter</div>
+          <a href="mailto:ltsantan47@gmail.com" class="google icn"><i class="fa fa-google midicon"></i></a>  <div style="padding-left: 5px; color:white;">Gmail</div>
+          <a href="/asstes/santan-2.pdf" class="resume icn"><i class="fa fa-download midicon"></i></a> <div style="padding-left: 5px; color:white;">Resume</div>
+          <a href="/projects.html" class="projects icn"><i class="fa fa-star midicon"></i></a> <div style="padding-left: 5px; color:white;">Projects</div>
+      </div>
+    </div>
+    <!-- ------------------------------------- -->
+    <div id="desktopMenu" class="icon-bar hide">
+      <div class="flexRaw fix">
         <a href="https://github.com/Santan47" class="facebook"><i class="fa fa-github"></i></a> <div style="padding-left: 5px;">Github</div>
       </div>
-      <div class="flexRaw">
+      <div class="flexRaw fix">
         <a href="https://www.linkedin.com/in/santan47/" class="linkedin"><i class="fa fa-linkedin"></i></a> <div style="padding-left: 5px;"> LinkedIn</div>
       </div>
-      <div class="flexRaw">
-        <a href="https://twitter.com/47santan" class="twitter"><i class="fa fa-twitter"></i></a>  <div style="padding-left: 5px;">Twitter</div>
+      <div class="flexRaw fix">
+        <a href="https://twitter.com/47santan" class="twitter"><i class="fa fa-twitter" style="width: 17px;"></i></a>  <div style="padding-left: 4px;">Twitter</div>
       </div>
-      <div class="flexRaw">
+      <div class="flexRaw fix">
         <a href="mailto:ltsantan47@gmail.com" class="google"><i class="fa fa-google"></i></a>  <div style="padding-left: 5px;">Gmail</div>
       </div>
-      <div class="flexRaw">
-        <a href="/asstes/santan-2.pdf" class="resume"><i class="fa fa-file"></i></a> <div style="padding-left: 5px;">CV</div>
+      <div class="flexRaw fix">
+        <a href="/asstes/santan-2.pdf" class="resume"><i class="fa fa-download"></i></a> <div style="padding-left: 5px;">Resume</div>
       </div>
-      <div class="flexRaw">
+      <!-- <div class="flexRaw">
         <a href="projects.html" class="projects"><i class="fa fa-star"></i></a> <div style="padding-left: 5px;">Projects</div>
-      </div>
+      </div> -->
 
     </div>
-    <div class="main profile">
+    <div id="profileDiv" class="main profile">
       <img src="asstes/WhatsApp Image 2020-03-27 at 4.36.33 PM.jpeg" class="profile-pic">
+    </div>
+    <div class="icon-bar-right">
+      <div>
+        <a href="projects.html" class="projectDiv projects hide">
+          <div style="padding-left: 5px;">Projects</div>
+        </a> 
+      </div>
+
     </div>
     <div id="segments">
     </div>
@@ -62,6 +88,13 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  -->
+
 <script src="js/script.js"></script>
 </body>
 </html>
