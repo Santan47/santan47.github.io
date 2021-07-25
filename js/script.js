@@ -23,6 +23,13 @@ $(document).ready(function() {
       $('#icns').slideToggle();
     });
 
+    // $('.projectsDiv').click(function(){
+    //   $("#projectsSection").removeClass("hide");
+    // });
+    // ('.indexNav').click(function(){
+    //   $("#projectsSection").addClass("hide");
+    // });
+
     var content = [{
       title: "Hi! I'm Santan Kr. Sharma",
       desc: "Software Developer"
@@ -90,11 +97,15 @@ $(document).ready(function() {
         if(isMobile){
           // $(".main").removeClass("hide");
           $("#profileDiv").attr('style', 'padding-top: 120px');
+        }else{
+          $("#profileDiv").attr('style', 'padding-top: 50px');
         }
         $("#soup-next").attr('style', 'padding-left: 0px');
       }
       else{
         if(isMobile){
+          $("#profileDiv").attr('style', 'padding-top: 20px');
+        }else{
           $("#profileDiv").attr('style', 'padding-top: 20px');
         }
         $("#soup-prev").attr('style', 'padding-right: 80px');
@@ -115,10 +126,14 @@ $(document).ready(function() {
         $("#soup-prev").attr('style', 'padding-right: 0px');
         if(isMobile){
           $("#profileDiv").attr('style', 'padding-top: 20px');
+        }else{
+          $("#profileDiv").attr('style', 'padding-top: 20px');
         }
       }
       else{
         if(isMobile){
+          $("#profileDiv").attr('style', 'padding-top: 20px');
+        }else{
           $("#profileDiv").attr('style', 'padding-top: 20px');
         }
         $("#soup-prev").attr('style', 'padding-right: 80px');
@@ -188,14 +203,36 @@ $(document).ready(function() {
             };
             var middleX = bounds.left + $(".position-data").eq(currentPage).width() / 2;
             var middleY = bounds.top + $(".position-data").eq(currentPage).height() / 2;
+
             //finally, apply all the scrambles
             $(".mutable:eq(" + i + ") > " + parts[j][1] + " > .letter").eq(k).css({
               left: randLeft,
               top: randTop,
-              color: "#00FFFF",
+              color: "grey",
               opacity: 0.3,
               zIndex: "initial"
             });
+
+            // if(isMobile){
+            //   //finally, apply all the scrambles
+            //   $(".mutable:eq(" + i + ") > " + parts[j][1] + " > .letter").eq(k).css({
+            //     left: randLeft,
+            //     top: randTop,
+            //     color: "grey",
+            //     opacity: 0.3,
+            //     zIndex: "initial"
+            //   });
+            // }
+            // else{
+            //   //finally, apply all the scrambles
+            // $(".mutable:eq(" + i + ") > " + parts[j][1] + " > .letter").eq(k).css({
+            //   left: randLeft,
+            //   top: randTop,
+            //   color: "grey",
+            //   opacity: 0.3,
+            //   zIndex: "initial"
+            // });
+            // }
           }
         }
       }

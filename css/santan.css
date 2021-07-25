@@ -2,7 +2,7 @@
   .profile {
 	display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 50px;
     /* top: 20px; */
     border-radius: 50%;
   }
@@ -11,6 +11,7 @@
     height: 220px;
     float: left;
     border-radius: 50%;
+	border: 1px solid white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -20,7 +21,7 @@
 	align-items: center;
 	color: black;
 	background: grey;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 }
 
 .flexRaw:hover{
@@ -28,7 +29,8 @@
 	display: flex;
 	align-items: center;
 	color: white;
-	background: black;
+	background-color: #000 !important;
+	/* opacity: 0,6; */
 	border: 1px solid grey;
 	transition: width 0.5s;
   -webkit-transition: width 0.5s;
@@ -39,8 +41,8 @@
 	display: flex;
 	align-items: center;
 	color: white;
-	background: black;
-	border: 1px solid black;
+	background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+	/* border: 1px solid black; */
 	transition: width 0.5s;
   -webkit-transition: width 0.5s;
 }
@@ -59,6 +61,14 @@
 	font-size: 32px;
   }
   
+  #soup-prev{
+	  cursor: pointer;
+  }
+
+  #soup-next{
+	cursor: pointer;
+  }
+
   .soup-desc {
 	font-size: 16px;
   }
@@ -78,7 +88,7 @@
 	min-width: 320px;
 	min-height: 480px;
 	position: relative;
-	background-color: black;
+	background: linear-gradient(to right, #06485e 0%, #743454 100%);;
   }
   
   .letters-wrap {
@@ -183,7 +193,7 @@
   .icon-bar-right a:hover {
 	opacity: 0.6;
 	text-decoration: none;
-	background-color: lightseagreen;
+	background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
   }
 
   .facebook {
@@ -222,15 +232,16 @@
     display: flex !important;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
     font-size: 20px;
     font-weight: 600;
     font-family: system-ui;
+	cursor: pointer;
     padding: 10px;
     height: 200px;
     width: 129px;
     border-radius: 500px 0 0 500px;
-    background-color: lightseagreen;
+    background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
   }
   
   .content {
@@ -247,14 +258,24 @@
 		text-align: center;
 		font-family: 'Open Sans', sans-serif;
 	  }
-	  #soup-container {
+	  /* #soup-container {
 		width: 100%;
 		height: 100%;
 		min-width: 320px;
 		min-height: 480px;
 		position: relative;
 		background-color: black;
+	  } */
+
+	  #soup-container {
+		width: 100%;
+		height: 100%;
+		min-width: 320px;
+		min-height: 480px;
+		position: relative;
+		background: black;
 	  }
+
 	  .profile {
 		display: flex;
 		justify-content: center;
@@ -285,13 +306,12 @@
 	  }
 
 	  #mobileMenu{
-		background: black;
 		z-index: 1;
 	  }
 
 	.con{
 		cursor: pointer;
-		background: black;
+		background: transparent;
 		z-index: 1;
 		padding: 20px;
 		border-radius: 0 0 70% 70%;
