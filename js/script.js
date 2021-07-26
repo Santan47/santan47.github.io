@@ -23,12 +23,14 @@ $(document).ready(function() {
       $('#icns').slideToggle();
     });
 
-    // $('.projectsDiv').click(function(){
-    //   $("#projectsSection").removeClass("hide");
-    // });
-    // ('.indexNav').click(function(){
-    //   $("#projectsSection").addClass("hide");
-    // });
+    $('.projectsNav').click(function(){
+      $("#projectsSection").removeClass("hide");
+      $("#soup-container").addClass("hide");
+    });
+    ('.soup-prev-btn').click(function(){
+      $("#projectsSection").addClass("hide");
+      $("#soup-container").removeClass("hide");
+    });
 
     var content = [{
       title: "Hi! I'm Santan Kr. Sharma",
