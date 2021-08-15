@@ -8,11 +8,56 @@ $(document).ready(function() {
       $(".projectDiv").addClass("hide");
       $("#mobileMenu").removeClass("hide");
       $("#desktopMenu").addClass("hide");
+      $("#soup-prev-btn").attr('style', 'right: 0px');
+      $('.projectsNav').click(function(){
+        // $(".projectsNav").addClass("hide");
+        $("#segments").addClass("hide");
+        $("#desktopMenu").addClass("hide");
+        $("#soup-nav").addClass("hide");
+         openNav();
+        // $("#projectsSection").removeClass("hide");
+      });
+
+      $('#soup-prev-btn').click(function(){
+        closeNav();
+        setTimeout(function() {
+          $(".projectsNav").removeClass("hide");
+          $("#segments").removeClass("hide");
+          $("#desktopMenu").addClass("hide");
+          $("#soup-nav").removeClass("hide");
+      }, 250);
+        // $("#projectsSection").addClass("hide");
+        // $("#soup-container").removeClass("hide");
+      });
+
     }
     else{
       $(".projectDiv").removeClass("hide");
       $("#mobileMenu").addClass("hide");
       $("#desktopMenu").removeClass("hide");
+      $("#soup-prev-btn").attr('style', 'left: 0px');
+
+      $('.projectsNav').click(function(){
+        $(".projectsNav").addClass("hide");
+        $("#segments").addClass("hide");
+        $("#desktopMenu").addClass("hide");
+        $("#soup-nav").addClass("hide");
+         openNav();
+        // $("#projectsSection").removeClass("hide");
+      });
+
+      $('#soup-prev-btn').click(function(){
+        closeNav();
+        setTimeout(function() {
+          $(".projectsNav").removeClass("hide");
+          $("#segments").removeClass("hide");
+          $("#desktopMenu").removeClass("hide");
+          $("#soup-nav").removeClass("hide");
+      }, 250);
+        // $("#projectsSection").addClass("hide");
+        // $("#soup-container").removeClass("hide");
+      });
+
     }
 
     $('#icns').hide();
@@ -23,14 +68,13 @@ $(document).ready(function() {
       $('#icns').slideToggle();
     });
 
-    $('.projectsNav').click(function(){
-      $("#projectsSection").removeClass("hide");
-      $("#soup-container").addClass("hide");
-    });
-    ('.soup-prev-btn').click(function(){
-      $("#projectsSection").addClass("hide");
-      $("#soup-container").removeClass("hide");
-    });
+    function openNav() {
+      document.getElementById("projectsSection").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("projectsSection").style.width = "0";
+    }
 
     var content = [{
       title: "Hi! I'm Santan Kr. Sharma",
@@ -108,7 +152,7 @@ $(document).ready(function() {
         if(isMobile){
           $("#profileDiv").attr('style', 'padding-top: 20px');
         }else{
-          $("#profileDiv").attr('style', 'padding-top: 20px');
+          $("#profileDiv").attr('style', 'padding-top: 6px');
         }
         $("#soup-prev").attr('style', 'padding-right: 80px');
         $("#soup-next").attr('style', 'padding-left: 80px');
@@ -129,14 +173,14 @@ $(document).ready(function() {
         if(isMobile){
           $("#profileDiv").attr('style', 'padding-top: 20px');
         }else{
-          $("#profileDiv").attr('style', 'padding-top: 20px');
+          $("#profileDiv").attr('style', 'padding-top: 6px');
         }
       }
       else{
         if(isMobile){
           $("#profileDiv").attr('style', 'padding-top: 20px');
         }else{
-          $("#profileDiv").attr('style', 'padding-top: 20px');
+          $("#profileDiv").attr('style', 'padding-top: 6px');
         }
         $("#soup-prev").attr('style', 'padding-right: 80px');
         $("#soup-next").attr('style', 'padding-left: 80px');
