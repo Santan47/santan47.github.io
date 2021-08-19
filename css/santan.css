@@ -344,8 +344,11 @@
     justify-content: center;
     align-items: flex-start;
     width: 70%;
-    height: 200px;
-    margin-bottom: 10px;
+    height: 210px;
+    padding: 0px 0px 0px 10px;
+    /* border-bottom: 1px solid; */
+    border-radius: 0px 0px 0px 15px;
+    margin-bottom: 20px;
   }
 
   .projectContent{
@@ -360,7 +363,7 @@
   }
 
   .projectContent .desc{
-	height: 124px;
+	/* height: 124px; */
     /* position: fixed; */
     overflow: auto;
   }
@@ -558,6 +561,21 @@
 			position: absolute;
 			/* right: 0px !important; */
 		  }
+
+		.projectCard{
+			display: flex !important;
+			flex-direction: column !important;
+			justify-content: end;
+			align-items: center;
+			width: 98% !important;
+			height: auto;
+			margin-bottom: 10px !important;
+		}
+
+		.projectContent {
+			padding: 10px 30px;
+			text-align: justify;
+		}
 		
 	  
   }

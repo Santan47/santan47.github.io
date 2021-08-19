@@ -25,43 +25,13 @@
         <div style="display: flex; justify-content: center; align-items: center; margin:10px; height: 50px;">
           <span id="soup-prev-btn" class="projectIcon" ><a style="color: white;" ><i class="fa fa-arrow-circle-o-left" style="font-size: 44px;" aria-hidden="true"></i></a></span>
           <div style="display: flex; justify-content: center; align-items: center;">
-            <div class="headNav activeNav">PROJECTS</div><div>|</div>
-            <div class="headNav" >BLOGS</div>
+            <div class="headNav activeNav">PROJECTS</div><div class="hide">|</div>
+            <div class="headNav hide" >BLOGS</div>
           </div>
         </div>
       </div>
-      <div class="mainSection">
-        <div class="projectCard">
-          <div class="imgSection">
-            <img src="https://source.unsplash.com/random" width="300px" height="200px">
-          </div>
-          <div class="projectContent">
-            <div style="font-size: 22px;font-weight: 600;">Project Name</div>
-            <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum.</div>
-            <div><a href="#">View Project</a></div>
-          </div>
-        </div>
-        <!--  <div class="projectCard">
-          <div class="imgSection">
-            <img src="https://source.unsplash.com/random" width="300px" height="200px">
-          </div>
-          <div class="projectContent">
-            <div style="font-size: 22px;font-weight: 600;">Project Name</div>
-            <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum.</div>
-            <div><a href="#">View Project</a></div>
-          </div>
-        </div>
-        <div class="projectCard">
-          <div class="imgSection">
-            <img src="https://source.unsplash.com/random" width="300px" height="200px">
-          </div>
-          <div class="projectContent">
-            <div style="font-size: 22px;font-weight: 600;">Project Name</div>
-            <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque sit sequi beatae architecto. Voluptatem quisquam pariatur cupiditate iure eum excepturi consequatur deserunt architecto doloremque nostrum.</div>
-            <div><a href="#">View Project</a></div>
-          </div>
-        </div>
-        <div class="projectCard">
+      <div id="mainProjectSection" class="mainSection">
+        <!-- <div class="projectCard">
           <div class="imgSection">
             <img src="https://source.unsplash.com/random" width="300px" height="200px">
           </div>
@@ -136,6 +106,22 @@
     </div>
 </div>
 
+
+<script type="text/x-handlebars-template" id='ProjectItemsTemplate'>
+  {{#each this}}
+    <div class="projectCard">
+      <div class="imgSection">
+        <img src="{{this.img}}" width="300px" height="140px">
+      </div>
+      <div class="projectContent">
+        <div style="font-size: 22px;font-weight: 600;">{{this.title}}</div>
+        <div class="desc">{{this.desc}}</div>
+        <div><a href="{{this.link}}" target="_blank"> View Project</a></div>
+      </div>
+    </div>
+  {{/each}}
+</script>
+
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -147,14 +133,8 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<!-- 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  -->
+<script src="js/handlerbars.js"></script>
 
 <script src="js/script.js"></script>
 </body>
 </html>
-
-<!-- IF(varClickedWhat = "manager" ,BINDAPI( [usersPopupForRoles.result.rows.curr_company,usersPopupForRoles.result.rows.emp_id,usersPopupForRoles.result.rows.user_name,usersPopupForRoles.result.rows.curr_band,usersPopupForRoles.result.rows.submission_status,usersPopupForRoles.result.rows.talent_card_pdf_mgr,usersPopupForRoles.result.rows.dna_mgr_pdf,usersPopupForRoles.result.rows.user_email,usersPopupForRoles.result.rows.uid,usersPopupForRoles.result.rows.int_band],usersPopupForRoles.result.rows.user_email <> myemail),BINDAPI( [usersPopupForRoles.result.rows.curr_company,usersPopupForRoles.result.rows.emp_id,usersPopupForRoles.result.rows.user_name,usersPopupForRoles.result.rows.curr_band,usersPopupForRoles.result.rows.submission_status,usersPopupForRoles.result.rows.talent_card_pdf_mg,usersPopupForRoles.result.rows.-,usersPopupForRoles.result.rows.user_email,usersPopupForRoles.result.rows.uid,usersPopupForRoles.result.rows.int_band],usersPopupForRoles.result.rows.user_email <> myemail)) -->

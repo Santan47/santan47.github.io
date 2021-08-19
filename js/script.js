@@ -2,6 +2,48 @@ $(document).ready(function() {
     /*
      * Main variables
      */
+
+    var fnHandleBars = function(template, data) {
+      template = "#" + template;
+      var Source = $(template).html();
+      var fnTemplate = Handlebars.compile(Source);
+      return fnTemplate(data);
+    };
+
+    var obj = [
+      {
+        "title": "Word Dictionary",
+        "desc": "Word Dictionary in Django, This dictionary contain millions of word it will give you all information regarding the word with Phonetics,Pronunciation,Defination and Examples.",
+        "link": "https://scarletx47.pythonanywhere.com/",
+        "img":"../asstes/dict.png"
+      },
+      {
+        "title": "Into The Sky",
+        "desc": "The objective of this site is to make NASA data, including imagery, eminently visible to all. Data is fetched direct from NASA API's.",
+        "link": "https://santan47.github.io/IntoTheSky/",
+        "img":"../asstes/nasa.png"
+      },
+      {
+        "title": "Color Picker",
+        "desc": "Fast and decorated color piker for building good UI and developer friendly, Its ease the task of picking colors for UI.",
+        "link": "https://santan47.github.io/Color-Picker",
+        "img":"../asstes/colorpiker.png"
+      },
+      {
+        "title": "Word War",
+        "desc": "It is a mobile app developed in Django python you can post any poetries or gazals there and store it as your content.",
+        "link": "https://github.com/Santan47/WordWar-Django",
+        "img":"../asstes/dummy.png"
+      }
+    ]
+
+    function insertProjectHandlebar(){
+      var cardsHtml = fnHandleBars("ProjectItemsTemplate", obj);
+      $('#mainProjectSection').html(cardsHtml);
+    }
+
+    insertProjectHandlebar();
+
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     if(isMobile){
