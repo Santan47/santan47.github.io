@@ -128,7 +128,7 @@ $(document).ready(function() {
       ]
     },{
       title: "About My Role",
-      desc: "My key responsibilities are to make responsive web and mobile applications from scratch coordinating with UI/UX designers, building reusable components in angular7 and API's in ASP.NET and ExpressJs, handling data in the back-end. Tech stack which we use are ExpressJs, C#, ASP.NET, Angular7, React, MySql, JavaScript, JQuery, HTML, CSS."
+      desc: "My key responsibilities are to make responsive web and mobile applications from scratch coordinating with UI/UX designers, building reusable components in angular7 and API's in Python3 and ASP.NET MVC handling data in the back-end. Tech stack which we use are Python3, ASP.NET MVC, Angular7 , MySql, JavaScript, JQuery, HTML, CSS."
     }, {
       title: "Find Me On given Links",
       desc: [

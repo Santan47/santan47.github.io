@@ -345,15 +345,15 @@
     align-items: flex-start;
     width: 70%;
     height: 210px;
-    padding: 0px 0px 0px 10px;
-    /* border-bottom: 1px solid; */
+    padding: 10px 0px 0px 10px;
     border-radius: 0px 0px 0px 15px;
     margin-bottom: 20px;
   }
 
   .projectContent{
-	padding: 10px;
+	padding: 10px 24px;
     text-align: justify;
+    height: 140px;
   }
 
   .projectContent a{
@@ -366,6 +366,14 @@
 	/* height: 124px; */
     /* position: fixed; */
     overflow: auto;
+  }
+
+  .proImg{
+	border-radius: 10px;
+    opacity: 0.8;
+    box-shadow: 0px 0px 5px 4px;
+	height: 140px;
+	width: 300px;
   }
 
   @media only screen and (max-width: 1100px) {
@@ -573,7 +581,7 @@
 		}
 
 		.projectContent {
-			padding: 10px 30px;
+			padding: 10px 20px;
 			text-align: justify;
 		}
 		
