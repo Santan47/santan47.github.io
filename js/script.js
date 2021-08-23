@@ -165,7 +165,7 @@ $(document).ready(function() {
       $("#segments").append("<div class=\"letters-wrap position-data\"><div class=\"soup-title\"></div><div class=\"soup-desc\"></div></div>");
       setText();
     }
-    //initial arrangement
+    //initial arrangements
     arrangeCurrentPage();
     scrambleOthers();
     /*
